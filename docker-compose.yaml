@@ -11,7 +11,8 @@ services:
     links:
       - web
   web:
-    image: 'vitorreiel/vuejs-node:latest'
+    build: ./
+    image: 'application-web/vuejs-node:latest'
     container_name: web
     ports:
       - '3000:3000'
